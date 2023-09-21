@@ -178,15 +178,16 @@ function mesesDelAño(array) {
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
    var mesesEncontrados = []
-   for (let i = 0; i < array.length; i++) {
+   for (var i = 0; i < array.length; i++) {
       if(array[i]==="Enero" || array[i]==="Marzo" || array[i]==="Noviembre"){
          mesesEncontrados.push(array[i])
-      } if(mesesEncontrados.length === 0) {
-         return "No se encontraron los meses pedidos"}
-      else{return mesesEncontrados}
+      }
+    } if(mesesEncontrados.includes("Enero") && mesesEncontrados.includes("Marzo") && mesesEncontrados.includes("Noviembre")) {
+         return mesesEncontrados}
+      else{return "No se encontraron los meses pedidos"}
       
    }
-}
+
 
 function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
