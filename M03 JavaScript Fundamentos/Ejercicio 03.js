@@ -5,11 +5,8 @@ function sonIguales(x, y) {
    // Retorna true si "x" e "y" son iguales.
    // De lo contrario, retorna false.
    // Tu código:
-   if(x === y){
-    return true;
-   } else {
-    return false
-   }
+   if (x === y) {return true;}
+   else {return false}
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -27,22 +24,16 @@ function menosQueNoventa(num) {
    // Retorna true si el argumento "num" es menor que noventa.
    // De lo contrario, retorna false.
    // Tu código:
-   if(num < 90){
-      return true
-     } else {
-      return false
-     }
+   if(num<90){return true}
+   else {return false}
 }
 
 function mayorQueCincuenta(num) {
    // Retorna true si el argumento "num" es mayor que cincuenta.
    // De lo contrario, retorna false.
    // Tu código:
-   if(num > 50){
-      return true
-     } else {
-      return false
-     }
+   if(num>50){return true}
+   else {return false}
 }
 
 function esPar(num) {
